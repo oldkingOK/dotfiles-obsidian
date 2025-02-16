@@ -1,6 +1,12 @@
-# 常用符号
+# LatexSuite 配置
 
-## 离散数学
+## 配置
+
+设置 `Load snippet from file` 以及 `Snippet variables file`
+
+## 常用符号
+
+### 离散数学
 
 $$
 \begin{array}{c|c|c}
@@ -26,7 +32,7 @@ $$
 $$
 
 
-## 其他
+### 其他
 
 | Symbol | Snippet       | Description           |
 | ------ | ------------- | --------------------- |
