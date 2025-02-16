@@ -313,17 +313,22 @@
 	}, options: "mA", description: "N x N identity matrix"},
 
     // https://www.cnblogs.com/coderzjz/p/15821966.html
-    {trigger: /@(\d+)/, replacement: (match) => {
+    // numbers with circle, 0~50 avalible
+    {trigger: /@(\d)/, replacement: (match) => {
         const n = parseInt(match[1]);
-        let output = String.fromCodePoint(((n) => {
-            if (n == 0) return 0x24EA;
-            if (0 < n && n <= 20) return 0x245F+n;
+        return String.fromCodePoint((n == 0) ? 0x24EA : 0x245F + n)
+	}, options: "tmA", description: "0~9 with circle"},
+    {trigger: /([\u2460-\u2463])(\d)/, replacement: (match) => {
+        let tn = match[1].codePointAt(0);
+        tn = (tn == 0x24EA) ? 0 : (tn - 0x245F);
+        const n = tn * 10 + parseInt(match[2]);
+        return String.fromCodePoint(((n) => {
+            if (9  < n && n <= 20) return 0x245F+n;
             if (20 < n && n <= 35) return 0x3250+(n-20);
-            if (35 < n && n <= 50) return 0x32B0+(n-35);
-            return 0x1fbc0; // `No` symbol
-        })(n))
-		return output;
-	}, options: "tm", description: "Unicode: numbers with circle"},
+            if (35 < n && n < 50) return 0x32B0+(n-35);
+        })(n));
+	}, options: "tmA", description: "10~49 with circle"},
+    {trigger: "\u{2464}0", replacement: "\u32BF", options: "tmA", description: "50 with circle"},
 
     // Discrete mathematics
     {trigger: "uphar", replacement: "\\upharpoonright ", options: "mA"},
