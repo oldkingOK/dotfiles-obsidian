@@ -255,6 +255,8 @@
 	{trigger: "align", replacement: "\\begin{align}\n$0\n\\end{align}", options: "mA"},
     {trigger: "array", replacement: "\\begin{array}{$0}\n$1\n\\end{array}", options: "mA"},
 
+    {trigger: "\\\\\n ", replacement: "\\\\\n\\hline\n", options: "mA", description: "add a horizontal line to array environment"},
+
     // Brackets
 	{trigger: "avg", replacement: "\\langle $0 \\rangle $1", options: "mA"},
 	{trigger: "norm", replacement: "\\lvert $0 \\rvert $1", options: "mA", priority: 1},
