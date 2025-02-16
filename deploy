@@ -1,0 +1,4 @@
+#!/bin/bash
+base="$(dirname $0)"
+ln -sf "$base/latex-suite/latex-suite-snippets.js" ./
+ln -sf "$base/latex-suite/README.md" ./latex-suite.md
