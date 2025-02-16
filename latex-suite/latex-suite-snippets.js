@@ -3,6 +3,7 @@
 	{trigger: "mk", replacement: "$$0$", options: "tA"},
 	{trigger: "dm", replacement: "$$\n$0\n$$", options: "tAw"},
 	{trigger: "beg", replacement: "\\begin{$0}\n$1\n\\end{$0}", options: "mA"},
+    {trigger: "ds", replacement: "\\displaystyle", options: "mA"},
 
     // Dashes
 	// {trigger: "--", replacement: "–", options: "tA"},
@@ -21,6 +22,7 @@
 	{trigger: "@z", replacement: "\\zeta", options: "mA"},
 	{trigger: "@t", replacement: "\\theta", options: "mA"},
 	{trigger: "@T", replacement: "\\Theta", options: "mA"},
+    {trigger: "@r", replacement: "\\rho", options: "mA"},
 	{trigger: ":t", replacement: "\\vartheta", options: "mA"},
 	{trigger: "@i", replacement: "\\iota", options: "mA"},
 	{trigger: "@k", replacement: "\\kappa", options: "mA"},
@@ -46,6 +48,7 @@
 	{trigger: "_", replacement: "_{$0}$1", options: "mA"},
 	{trigger: "sts", replacement: "_\\text{$0}", options: "mA"},
 	{trigger: "sq", replacement: "\\sqrt{ $0 }$1", options: "mA"},
+    {trigger: "root", replacement: "\\root{$0}\\of{$1}$2", options: "mA"},
 	{trigger: "//", replacement: "\\frac{$0}{$1}$2", options: "mA"},
 	{trigger: "ee", replacement: "e^{ $0 }$1", options: "mA"},
     {trigger: "invs", replacement: "^{-1}", options: "mA"},
@@ -99,6 +102,8 @@
 	{trigger: "yjj", replacement: "y_{j}", options: "mA"},
 
     // Symbols
+    {trigger: "oo", replacement: "\\circ", options: "m"},
+    {trigger: "o*", replacement: "\\odot", options: "mA"},
     {trigger: "ooo", replacement: "\\infty", options: "mA"},
 	{trigger: "sum", replacement: "\\sum", options: "mA"},
 	{trigger: "prod", replacement: "\\prod", options: "mA"},
@@ -115,6 +120,7 @@
     {trigger: "para", replacement: "\\parallel", options: "mA"},
 
 	{trigger: "===", replacement: "\\equiv", options: "mA"},
+    {trigger: "~~", replacement: "\\approx", options: "mA"},
     {trigger: "!=", replacement: "\\neq", options: "mA"},
 	{trigger: ">=", replacement: "\\geq", options: "mA"},
 	{trigger: "<=", replacement: "\\leq", options: "mA"},
@@ -126,6 +132,7 @@
 
 
     {trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
+    {trigger: "\\leq>", replacement: "\\Leftrightarrow ", options: "mA"},
 	{trigger: "->", replacement: "\\to", options: "mA"},
 	{trigger: "!>", replacement: "\\mapsto", options: "mA"},
     {trigger: "=>", replacement: "\\implies", options: "mA"},
@@ -141,6 +148,7 @@
 	{trigger: "eset", replacement: "\\emptyset", options: "mA"},
 	{trigger: "set", replacement: "\\{ $0 \\}$1", options: "mA"},
 	{trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
+    {trigger: "noth", replacement: "\\varnothing", options: "mA"},
 
 	{trigger: "LL", replacement: "\\mathcal{L}", options: "mA"},
 	{trigger: "HH", replacement: "\\mathcal{H}", options: "mA"},
@@ -245,8 +253,7 @@
 
 	{trigger: "cases", replacement: "\\begin{cases}\n$0\n\\end{cases}", options: "mA"},
 	{trigger: "align", replacement: "\\begin{align}\n$0\n\\end{align}", options: "mA"},
-	{trigger: "array", replacement: "\\begin{array}\n$0\n\\end{array}", options: "mA"},
-
+    {trigger: "array", replacement: "\\begin{array}{$0}\n$1\n\\end{array}", options: "mA"},
 
     // Brackets
 	{trigger: "avg", replacement: "\\langle $0 \\rangle $1", options: "mA"},
@@ -315,4 +322,7 @@
         })(n))
 		return output;
 	}, options: "tm", description: "Unicode: numbers with circle"},
+
+    // Discrete mathematics
+    {trigger: "uphar", replacement: "\\upharpoonright ", options: "mA"},
 ]
