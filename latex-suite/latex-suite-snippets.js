@@ -302,5 +302,17 @@
 		output = `\\begin{pmatrix}\n${output}\n\\end{pmatrix}`;
 		return output;
 	}, options: "mA", description: "N x N identity matrix"},
-]
 
+    // https://www.cnblogs.com/coderzjz/p/15821966.html
+    {trigger: /@(\d+)/, replacement: (match) => {
+        const n = parseInt(match[1]);
+        let output = String.fromCodePoint(((n) => {
+            if (n == 0) return 0x24EA;
+            if (0 < n && n <= 20) return 0x245F+n;
+            if (20 < n && n <= 35) return 0x3250+(n-20);
+            if (35 < n && n <= 50) return 0x32B0+(n-35);
+            return 0x1fbc0; // `No` symbol
+        })(n))
+		return output;
+	}, options: "tm", description: "Unicode: numbers with circle"},
+]
