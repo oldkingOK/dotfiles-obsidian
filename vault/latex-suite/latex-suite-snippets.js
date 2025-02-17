@@ -80,6 +80,7 @@
 
 	{trigger: "hat", replacement: "\\hat{$0}$1", options: "mA"},
     {trigger: "bar", replacement: "\\bar{$0}$1", options: "mA"},
+    {trigger: "overl", replacement: "\\overline{$0}$1", options: "mA"},
 	{trigger: "dot", replacement: "\\dot{$0}$1", options: "mA", priority: -1},
 	{trigger: "ddot", replacement: "\\ddot{$0}$1", options: "mA"},
 	{trigger: "cdot", replacement: "\\cdot", options: "mA"},
@@ -209,6 +210,7 @@
     // Visual operations
 	{trigger: "U", replacement: "\\underbrace{ ${VISUAL} }_{ $0 }", options: "mA"},
 	{trigger: "O", replacement: "\\overbrace{ ${VISUAL} }^{ $0 }", options: "mA"},
+	{trigger: "o", replacement: "\\overline{ ${VISUAL} }", options: "mA"},
 	{trigger: "B", replacement: "\\underset{ $0 }{ ${VISUAL} }", options: "mA"},
 	{trigger: "C", replacement: "\\cancel{ ${VISUAL} }", options: "mA"},
 	{trigger: "K", replacement: "\\cancelto{ $0 }{ ${VISUAL} }", options: "mA"},
