@@ -4,3 +4,4 @@ ln -sf "$base/latex-suite/latex-suite-snippets.js" ./
 ln -sf "$base/latex-suite/latex-suite-snippet-variables.js" ./
 ln -sf "$base/latex-suite/README.md" ./latex-suite-readme.md
 ln -sf "$base/.obsidian/hotkeys.json" ./.obsidian/
+ln -sf "$base/.obsidian.vimrc" ./
