@@ -1,7 +1,7 @@
 #!/bin/bash
+[[ -f .obsidian/workspace.json ]] || echo "Here is not a obsidian vault!"
 base="$(dirname $0)"
-ln -sf "$base/latex-suite/latex-suite-snippets.js" ./
-ln -sf "$base/latex-suite/latex-suite-snippet-variables.js" ./
-ln -sf "$base/latex-suite/README.md" ./latex-suite-readme.md
-ln -sf "$base/.obsidian/hotkeys.json" ./.obsidian/
-ln -sf "$base/.obsidian.vimrc" ./
+find "$base/vault" -type f | xargs realpath --relative-base="$base/vault" | while read line; do
+    mkdir -p "$(dirname $line)"
+    ln -sf "$base/vault/$line" "$line"
+done
