@@ -40,5 +40,23 @@
       ],
       "key": "P"
     }
+  ],
+  "editor:open-search-replace": [],
+  "obsidian-git:open-git-view": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "G"
+    }
+  ],
+  "graph:open": [],
+  "outline:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "H"
+    }
   ]
 }
