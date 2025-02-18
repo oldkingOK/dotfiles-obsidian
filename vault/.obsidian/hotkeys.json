@@ -18,5 +18,12 @@
       ],
       "key": "N"
     }
+  ],
+  "app:reload": [
+    {
+      "modifiers": [],
+      "key": "F5"
+    }
+  ],
   ]
 }
