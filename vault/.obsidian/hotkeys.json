@@ -25,5 +25,20 @@
       "key": "F5"
     }
   ],
+  "switcher:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "command-palette:open": [
+    {
+      "modifiers": [
+        "Meta"
+      ],
+      "key": "P"
+    }
   ]
 }
