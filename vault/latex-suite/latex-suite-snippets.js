@@ -334,4 +334,7 @@
 
     // Discrete mathematics
     {trigger: "uphar", replacement: "\\upharpoonright ", options: "mA"},
+
+	{trigger: "Cm", replacement: "C_{$0}^{$1}$2", options: "mA"},
+	{trigger: "Am", replacement: "A_{$0}^{$1}$2", options: "mA"},
 ]
