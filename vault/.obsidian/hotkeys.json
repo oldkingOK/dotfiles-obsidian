@@ -8,5 +8,15 @@
     }
   ],
   "file-explorer:new-file": [],
-  "editor:delete-paragraph": []
+  "editor:delete-paragraph": [],
+  "file-explorer:new-file-in-new-pane": [],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ]
 }
