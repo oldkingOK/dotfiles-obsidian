@@ -1,9 +1,11 @@
 {
   "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./assets/6 随机变量的数字特征",
   "vimMode": true,
   "strictLineBreaks": true,
   "smartIndentList": false,
   "useTab": false,
   "autoPairBrackets": true,
-  "autoPairMarkdown": false
+  "autoPairMarkdown": false,
+  "showLineNumber": true
 }
