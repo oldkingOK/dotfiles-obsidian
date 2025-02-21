@@ -42,3 +42,6 @@ exmap tabnext obcommand workspace:next-tab
 nmap gt :tabnext<CR>
 exmap tabprev obcommand workspace:previous-tab
 nmap gT :tabprev<CR>
+
+" Yank to system clipboard
+set clipboard=unnamed
