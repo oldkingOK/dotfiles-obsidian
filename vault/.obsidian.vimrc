@@ -57,3 +57,7 @@ set clipboard=unnamed
 exmap tabclose obcommand workspace:close
 exmap tabc :tabclose
 exmap q :tabclose
+
+" reopen with X
+exmap undoclose obcommand workspace:undo-close-pane
+nmap X :undoclose<CR>
