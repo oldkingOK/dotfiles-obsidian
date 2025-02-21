@@ -45,3 +45,8 @@ nmap gT :tabprev<CR>
 
 " Yank to system clipboard
 set clipboard=unnamed
+
+" close the file
+exmap tabclose obcommand workspace:close
+exmap tabc :tabclose
+exmap q :tabclose
