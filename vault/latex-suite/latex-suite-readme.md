@@ -51,6 +51,7 @@ $$
 | \hline                                           | `<CR><Space>` | 在 array、matrix 环境中可使用 |
 | $\mathscr{F}$                                    | scrF          | 花体字                   |
 | $\left\{ \begin{align} a\\b \end{align} \right.$ | l{            | 花括号，常用于分段函数           |
+| $\overset{ \text{text} }{ \sim }$                | (visual)b     | 在符号上加标记               |
 
 ## Callouts
 

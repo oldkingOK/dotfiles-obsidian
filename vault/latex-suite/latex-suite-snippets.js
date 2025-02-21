@@ -212,6 +212,7 @@
 	{trigger: "U", replacement: "\\underbrace{ ${VISUAL} }_{ $0 }", options: "mA"},
 	{trigger: "O", replacement: "\\overbrace{ ${VISUAL} }^{ $0 }", options: "mA"},
 	{trigger: "o", replacement: "\\overline{ ${VISUAL} }", options: "mA"},
+	{trigger: "b", replacement: "\\overset{ $0 }{ ${VISUAL} }", options: "mA"},
 	{trigger: "B", replacement: "\\underset{ $0 }{ ${VISUAL} }", options: "mA"},
 	{trigger: "C", replacement: "\\cancel{ ${VISUAL} }", options: "mA"},
 	{trigger: "K", replacement: "\\cancelto{ $0 }{ ${VISUAL} }", options: "mA"},
