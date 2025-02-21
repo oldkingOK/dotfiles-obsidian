@@ -3,5 +3,7 @@
   "vimMode": true,
   "strictLineBreaks": true,
   "smartIndentList": false,
-  "useTab": false
+  "useTab": false,
+  "autoPairBrackets": true,
+  "autoPairMarkdown": false
 }
