@@ -25,3 +25,20 @@ map S[ :surround_square_brackets<CR>
 map S[ :surround_square_brackets<CR>
 map S{ :surround_curly_brackets<CR>
 map S} :surround_curly_brackets<CR>
+
+" Emulate Folding https://vimhelp.org/fold.txt.html#fold-commands
+exmap togglefold obcommand editor:toggle-fold
+nmap zo :togglefold<CR>
+nmap zc :togglefold<CR>
+nmap za :togglefold<CR>
+
+exmap unfoldall obcommand editor:unfold-all
+nmap zR :unfoldall<CR>
+
+exmap foldall obcommand editor:fold-all
+nmap zM :foldall<CR>
+
+exmap tabnext obcommand workspace:next-tab
+nmap gt :tabnext<CR>
+exmap tabprev obcommand workspace:previous-tab
+nmap gT :tabprev<CR>
