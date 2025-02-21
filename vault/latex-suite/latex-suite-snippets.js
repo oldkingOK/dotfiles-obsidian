@@ -278,6 +278,8 @@
 	{trigger: "lr[", replacement: "\\left[ $0 \\right] $1", options: "mA"},
 	{trigger: "lr|", replacement: "\\left| $0 \\right| $1", options: "mA"},
 	{trigger: "lra", replacement: "\\left< $0 \\right> $1", options: "mA"},
+	{trigger: "l{", replacement: "\\left\\{ \\begin{align} $0 \\end{align} \\right. $1", options: "nA"},
+	{trigger: "l{", replacement: "\\left\\{ \\begin{align}\n$0\n\\end{align} \\right. $1", options: "MA"},
 
 
     // Misc

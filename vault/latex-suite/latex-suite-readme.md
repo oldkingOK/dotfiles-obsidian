@@ -45,11 +45,12 @@ $$
 
 ### 其他
 
-| Symbol        | Snippet       | Description           |
-| ------------- | ------------- | --------------------- |
-| ⑫㉞            | @+数字          | 0~50                  |
-| \hline        | `<CR><Space>` | 在 array、matrix 环境中可使用 |
-| $\mathscr{F}$ | scrF          | 花体字                   |
+| Symbol                                           | Snippet       | Description           |
+| ------------------------------------------------ | ------------- | --------------------- |
+| ⑫㉞                                               | @+数字          | 0~50                  |
+| \hline                                           | `<CR><Space>` | 在 array、matrix 环境中可使用 |
+| $\mathscr{F}$                                    | scrF          | 花体字                   |
+| $\left\{ \begin{align} a\\b \end{align} \right.$ | l{            | 花括号，常用于分段函数           |
 
 ## Callouts
 
