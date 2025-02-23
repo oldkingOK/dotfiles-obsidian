@@ -30,6 +30,8 @@
 	{trigger: "@L", replacement: "\\Lambda", options: "mA"},
 	{trigger: "@s", replacement: "\\sigma", options: "mA"},
 	{trigger: "@S", replacement: "\\Sigma", options: "mA"},
+	{trigger: "@P", replacement: "\\Phi", options: "mA"},
+	{trigger: ":p", replacement: "\\varphi", options: "mA"},
 	{trigger: "@u", replacement: "\\upsilon", options: "mA"},
 	{trigger: "@U", replacement: "\\Upsilon", options: "mA"},
 	{trigger: "@o", replacement: "\\omega", options: "mA"},
