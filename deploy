@@ -1,5 +1,6 @@
 #!/bin/bash
-[[ -f .obsidian/workspace.json ]] || echo "Here is not a obsidian vault!"
+[[ ! -f .obsidian/workspace.json ]] && echo "Here is not a obsidian vault!" && exit 0
+
 base="$(dirname $0)"
 plugins="vault/.obsidian/plugins"
 find "$base/vault" -type f | grep -v "$plugins" | xargs realpath --relative-base="$base/vault" | while read line; do
