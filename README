@@ -1,5 +1,25 @@
-# dotfiles-obsidian
+dotfiles-obsidian
+=================
+My configuration of Obsidian, provide the init scripts for installing plugins and configurations of both plugin and Obsidian.
 
-## usage
+Use same plugins and configurations among all vaults by soft link everything.
 
-cd to your obsidian repo root path, excute /this/repo/deploy, and follow the corresponding instructions.
+
+Installation
+------------
+Create a new vault. It's not recommend that use an old vault because the soft link will override the plugins and settings etc.
+
+Make sure that and `python3-requests` exists in system.
+
+    git clone git@github.com:oldkingOK/dotfiles-obsidian.git
+    cd dotfiles-obsidian
+    python3 sync-plugin.py
+
+Then cd to the new obsidian repo root path which contains .obsidian folder, excute /this/repo/deploy, and follow the corresponding instructions.
+
+
+Notes
+-----
+
+- Remember check plugins update once in a while.
+- Deploy again if you moved this repo

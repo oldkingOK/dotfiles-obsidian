@@ -1,7 +1,12 @@
 #!/bin/bash
 [[ -f .obsidian/workspace.json ]] || echo "Here is not a obsidian vault!"
 base="$(dirname $0)"
-find "$base/vault" -type f | xargs realpath --relative-base="$base/vault" | while read line; do
+plugins="vault/.obsidian/plugins"
+find "$base/vault" -type f | grep -v "$plugins" | xargs realpath --relative-base="$base/vault" | while read line; do
     mkdir -p "$(dirname $line)"
     ln -sf "$base/vault/$line" "$line"
 done
+
+current_plugins="$(realpath --relative-base="$base/vault" "$base/$plugins")"
+[[ -h "$current_plugins" ]] || rm -rf "$current_plugins"
+ln -sf "$base/$plugins" "$current_plugins"

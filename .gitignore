@@ -1,0 +1,8 @@
+
+# Ignore plugins' binaries
+vault/.obsidian/plugins/**/manifest.json
+vault/.obsidian/plugins/**/main.js
+vault/.obsidian/plugins/**/styles.css
+
+# Ignore cursor-positions database
+vault/.obsidian/plugins/**/cursor-positions.json
