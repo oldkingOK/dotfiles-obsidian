@@ -43,6 +43,13 @@ A_{10}^{5} & \text{Am}
 \end{array}
 $$
 
+### 物理
+
+| Symbol     | Snippet |
+| ---------- | ------- |
+| $\nabla$   | nabl    |
+| $\partial$ | @p      |
+
 ### 其他
 
 | Symbol                                           | Snippet       | Description           |
